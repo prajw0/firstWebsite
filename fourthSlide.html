@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px 0px;
+        padding: 0px 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    html,body{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-color: #393939;
+    }
+
+    .fourthSlide{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        padding-left: 10vw;
+    }
+
+    .fourthSlide h1{
+        font-size: xx-large;
+        margin-bottom: 4vh;
+    }
+
+    .fourthslide{
+        height: 100%;
+        width: 90%;
+        background-color: rgb(216, 161, 88);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .slides{
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        overflow: scroll;
+        height: 50%;
+        background-color: white;
+    }
+
+    .slides div{
+        position: absolute;
+    }
+
+    .slides img{
+        object-fit: cover;
+        object-position: center;
+        width: 25vw;
+    }
+
+    .contents {
+        color: rgb(55, 217, 98);
+        margin-top: 80%;
+        overflow-y: hidden;
+    }
+</style>
+<body>
+    <section class="fourthSlide">
+        <h1>MY WORK</h1>
+
+        <div class="fourthslide">
+
+            <div class="slides">
+                <div>
+                    <img src="alexander-shatov-niUkImZcSP8-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="contents">
+                    <h3>hello world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus!</p>
+                </div>
+            </div>
+
+            <div class="slides">
+                <div>
+                    <img src="peter-bo-faMPQuSe4Wo-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="contents">
+                    <h3>hello world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus!</p>
+                </div>
+            </div>
+
+            <div class="slides">
+                <div>
+                    <img src="henry-ascroft-fbUFrRAVlgQ-unsplash.jpg" alt="" srcset="">
+                </div>
+                <div class="contents">
+                    <h3>hello world</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellendus!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

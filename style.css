@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:ital,wght@0,400;0,600;1,600&family=Roboto+Condensed:ital@1&family=Rubik:ital,wght@0,300;0,400;0,500;1,700&family=Ubuntu:ital@0;1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    height: 500vh;
+    width: 100%;
+    background-color: rgb(44 44 61);
+}
+
+.first-slide{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(44 44 61);
+}
+
+header{
+  position:fixed;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   /* background-color: rgb(0, 0, 0); */
+   height: 10vh;
+   margin: 0vw 5vw;
+   width: 100%;
+   z-index: 99;
+}
+
+.name{
+  font-weight: 900;
+  font-size: 30px;
+    background-image: url(color.jpg);
+    background-size: cover; 
+    background-position: 50% 50% ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgb(0, 0, 0);
+}
+
+.lists{
+    display: flex;
+   gap: 3vw;
+   position: relative;
+}
+
+.list{
+    color: aliceblue;
+    text-decoration: none;
+   list-style: none;
+     
+}
+
+.list:hover{
+    text-shadow: 4px -4px 4px #c8c1dc;
+}
+
+#more{
+    display: none;
+}
+
+.morelist{
+     display: none;
+  
+  }
+
+
+
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    /* background-color: rgb(71, 143, 199); */
+    height: 80%;
+    position: relative;
+    bottom: -20vh;
+}
+
+.left-page{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    justify-content: center;
+    align-items: start;
+    /* background-color: rgb(198, 169, 169); */
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.left-page h1{
+    font-size: 40px;
+}
+
+.left-page .name{
+   
+    background-image: url(https://images.unsplash.com/photo-1704369671954-88ffd3b8bfa9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-position: 50% 50% ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: rgb(0, 0, 0);
+}
+
+.left-page span{
+    font-size: 5vh;
+}
+
+.social-id{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    margin-top: 2vh;
+    padding: 1vh 2vw;
+    /* background-color: aliceblue; */
+    position: relative;
+}
+
+.social-id a img{
+    width: 35px;
+    border: 3px solid rgb(186, 219, 230);
+    border-radius: 50%;
+    transition: 0.1s all ease-in-out;
+    /* padding: 2px 2px; */
+    background:wheat;
+    margin: -13px 5px;
+}
+
+/* 
+it is also done through js
+.insta:hover{
+    width: 40px;
+  box-shadow: 0px 0px 19px 7px rgb(255 0 80);
+} */
+
+/* it is also done through js
+.fb:hover{
+    width: 40px;
+  box-shadow: 0px 0px 14px 4px rgb(0 31 255);
+} */
+
+.right-page{
+    position: relative;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0vw;
+}
+
+
+
+
+
+.right-page .pic{
+  
+ 
+    height: 70vh;
+    width: 23vw;
+    object-fit: contain; 
+    /* background-color: aliceblue;    */
+    filter: drop-shadow(10px -5px 9px rgb(86, 84, 84));
+    border: none;
+}
+
+.side-img{
+    height: 50vh;
+    width: 4vw;
+    background-color: #c8c1dc;
+    margin-top: 20vh;
+    background-image: url(img-aboutme.jpg);
+    object-fit: cover;
+   opacity: 0.3;
+    
+    /* box-shadow: 5px 5px 20px 5px rgb(86, 84, 84); */
+}
+
+
+
+@media (max-width:600px){
+
+    header{
+  position:relative;
+  margin-top: 10px;
+   display:flex; 
+   flex-direction: row;
+   align-items:start;
+  
+}
+
+
+
+
+
+      #more{
+        position: relative;
+        display: flex;
+        border-radius: 20%;
+        background-image: url(https://images.unsplash.com/photo-1705234897189-73a41dd41e33?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D);
+    background-size: cover; 
+    background-position: 50% 50% ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:content-box;
+   
+
+      }
+
+      .respmore{
+       position: absolute;
+         margin-top: 8vh;
+         margin-left: -50px;
+         display: none;
+       
+  }
+
+
+
+  .morelist{
+   
+    display: block;
+    color: rgb(133 255 241);
+    text-decoration: none;
+    animation-name: slider;
+    animation-duration: 1s;
+  }
+
+    @keyframes slider {
+        0%{
+            margin-left: -50px;
+            opacity: 0;
+        }
+
+        100%{
+            margin-left: 0px;
+            opacity: 1;
+        }
+    }
+
+  .morelist:hover{
+    text-shadow: 4px -4px 4px #e4dbff;
+}
+
+      .list{
+        display: none;
+      }
+
+      .name{
+        font-size: 40px;
+      }
+
+   
+
+      .intro{
+        /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap-reverse;
+    
+    /* background-color: rgb(71, 143, 199); */
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
+.left-page{
+    justify-content: center;
+     align-items: center;
+    margin-top: -70vh;
+}
+
+.left-page h1{
+    font-size: 30px;
+}
+
+
+
+.left-page span{
+    font-size: 3vh;
+}
+
+.right-page{
+    position: relative;
+    margin-top: -45vh;
+}
+
+.right-page .pic{
+    /* position: absolute; */
+ 
+    height: 55vh;
+    width: 70vw;
+    z-index: 100;
+}
+
+}
+
+.second-slide{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(black,rgb(77, 75, 75),lightblue);
+    /* background-color: rgb(38, 43, 43); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 4vw;
+    padding: 0vh 3vw;
+}
+
+.second-slide-left-page .next-myimg{
+    height: 100vh;
+    width: 60vw;
+    object-fit: contain;
+    /* background-color: #c8c1dc; */
+    height: 55vh;
+    
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;justify-content: center;
+    align-items: center;
+    /* background-color: #c8c1dc; */
+}
+
+
+
+.aboutme h1{
+    font-size: 6vh;
+   background-image: url(img-aboutme.jpg);
+   background-position: 50% 50%;
+   background-size: contain;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.about-button{
+    padding: 1vh 2vw;
+    border-radius: 10%;
+    height: 5vh;
+    /* border: none; */
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:600px) {
+    .second-slide{
+        display: flex;
+       flex-direction: column;
+       row-gap: 0px;
+       justify-content:space-evenly;
+        /* background-color: #5124d7; */
+    }
+
+    .second-slide-left-page .next-myimg{
+        border-radius: 50%;
+    }
+}
+
+.third-slide{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(56 52 69 / 31%);
+  padding: 7vh 5vw;
+}
+
+.service h1{
+    font-size: 7vw;
+    background-image: url(photo-1683009427666-340595e57e43.avif);
+    background-size: cover;
+    background-position: 30% 60%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  column-gap: 2vw;
+  margin-top: 4vh;
+    /* background-color: #e4dbff; */
+    position: relative;
+}
+
+.service-lists{
+    background-color: rgb(47, 41, 41);
+    transition: -50% -50%;
+    padding: 3vh 6vh;
+    color: #ffffff;
+    transition: all ease-in-out 0.5s;
+}
+
+.service-lists:hover{
+    border-bottom-left-radius: 7%;
+    border-top-right-radius: 7%;
+    transform: translateY(-10px) translateX(5px);
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(white, rgb(215, 174, 174));
+    color: black;
+}
+
+.service-lists i{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.service-lists h2{
+    margin-bottom: 10px;
+}
+
+.service-lists p{
+    margin-bottom: 10px;
+}
+
+.service-lists a{
+    color: rgb(42, 140, 107);
+    text-decoration: none;
+}
+
+.service-lists a:hover{
+    color: rgb(21, 255, 177);
+    display: block;
+}
+
+@media (max-width:600px) {
+    .service-lists{
+        padding: 1.5vh 6vh;
+    }
+}
+
+.fourth-slide{
+    height: 100vh;
+    width: 100%;
+    background-color: #393939;
+  padding: 15vh 3vw;
+}
+
+.fourth-slide h1{
+    font-size: 5vw;
+    color: rgb(201, 198, 196);
+}
+
+.fourthslides{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2vw ;
+    /* background-color: aliceblue; */
+}
+
+.fourthslide1{
+    background-image: url(henry-ascroft-fbUFrRAVlgQ-unsplash.jpg);
+    height: 61.5vh;
+    width: 30vw;
+    object-fit: cover;
+    background-size: 70vh 30vw;
+    background-repeat: no-repeat;
+    /* background-color: aqua; */
+    position: relative;
+    overflow-y: hidden;
+    transition: all ease-in-out 1s;
+}
+
+.fourthslide1:hover{
+    transform: scale(1.05);
+}
+
+.fourthslide1 div{
+    height: 61.5vh;
+    width: 30vw;
+    margin-top: 61.5vh;
+     background: linear-gradient(lightblue,red);
+  opacity: 0.8;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 4vw;
+    transition: all ease-in-out 1s;
+}
+
+.fourthslide1 div h3{
+    margin-bottom: 3vh;
+    font-size: xx-large;
+}
+
+.fourthslide1 div p{
+    margin-bottom: 7vh;
+}
+
+.fourthslide1:hover .animation{
+   transform: translateY(-61.5vh);
+}
+
+.fourthslide2{
+    background-image: url(alexander-shatov-niUkImZcSP8-unsplash.jpg);
+    height: 61.5vh;
+    width: 30vw;
+    object-fit: cover;
+    background-size: 70vh 30vw;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+
+.fourthslide2:hover{
+    transform: scale(1.05);
+}
+
+
+.fourthslide2 div{
+    height: 61.5vh;
+    width: 30vw;
+  opacity: 0.8;
+    position: absolute;
+    color: white;
+    margin-top: 61.5vh;
+     background: linear-gradient(lightblue,red);
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 4vw;
+    transition: all ease-in-out 1s;
+}
+
+.fourthslide2 div h3{
+    margin-bottom: 3vh;
+    font-size: xx-large;
+}
+
+.fourthslide2 div p{
+    margin-bottom: 7vh;
+}
+
+
+.fourthslide2:hover .animation{
+   transform: translateY(-61.5vh);
+}
+
+.fourthslide3{
+    background-image: url(peter-bo-faMPQuSe4Wo-unsplash.jpg);
+    height: 61.5vh;
+    width: 30vw;
+    object-fit: cover;
+    background-size: 70vh 30vw;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    position: relative;
+    transition: all ease-in-out 1s;
+}
+
+
+.fourthslide3:hover{
+    transform: scale(1.05);
+}
+
+
+.fourthslide3 div{
+    height: 61.5vh;
+    width: 30vw;
+    margin-top: 61.5vh;
+     background: linear-gradient(lightblue,red);
+  opacity: 0.8;
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 4vw;
+    transition: all ease-in-out 1s;
+}
+
+.fourthslide3 div h3{
+    margin-bottom: 3vh;
+    font-size: xx-large;
+}
+
+.fourthslide3 div p{
+    margin-bottom: 7vh;
+}
+
+
+.fourthslide3:hover .animation{
+   transform: translateY(-61.5vh);
+}
+
+@media (max-width:600px) { 
+    .fourthslide1{
+        object-fit: contain;
+        background-size: auto 23vw;
+       
+    }
+
+    .fourthslide2{
+    
+        object-fit: cover;
+        background-size: auto 23vw;
+      
+    }
+
+    .fourthslide3{
+        object-fit: cover;
+        background-size: auto 23vw;
+    }
+    
+}
+
+.fifth-slide{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(42, 40, 37);
+
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 4vw;
+  padding: 20vh 10vw;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-CV{
+    /* background-color: #413838; */
+    color: white;
+}
+
+.contact-CV h1{
+    margin-bottom: 3vh;
+    font-size: 5vw;
+}
+
+.contact-CV i{
+    margin-right: 1vw;
+}
+
+.contact-CV p{
+    font-size: 1.5vw;
+    margin-bottom: 3vh;
+}
+
+.contact-CV button{
+    font-size: 1vw;
+    font-weight: 900;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 10%;
+    transition: all ease-in-out 0.3s;
+}
+
+.contact-CV button:hover{
+    background: linear-gradient(rgb(78, 75, 75),rgb(159, 133, 133));
+    transform: scale(0.95);
+    color: white;
+}
+
+.contact-TEXT{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    /* background-color: #a69393; */
+   
+}
+
+.contact-TEXT form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.contact-TEXT form input{
+    height: 7vh;
+    border: none;
+    border-radius: 10px;
+        font-size: large;
+        background: linear-gradient(black,rgb(113, 109, 109));
+        color: white;
+        padding-left: 1vw;
+}
+
+
+
+.contact-TEXT form :nth-child(3){
+    height: 20vh;
+    border: none;
+    border-radius: 10px;
+        font-size: large;
+        background: linear-gradient(black,rgb(113, 109, 109));
+        color: white;
+        padding: 1vh 2vw;
+}
+
+form :last-child{
+    height: 5vh;
+    width: 6vw;
+   background-color: rgb(91, 172, 145);
+   font-size: 2vh;
+   font-weight: 600;
+}
+
+form :last-child:hover{
+    background-color: rgb(0, 255, 170);
+    box-shadow: 1px 2px 25px 5px rgb(35, 255, 182);
+}
+
+@media (max-width:600px) {
+    .contact{
+        display: flex;
+        row-gap: 4vw;
+        flex-direction: column;
+    }
+
+    .contact-CV{
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-CV p{
+        font-size: 4vw;
+    }
+
+
+    .contact-CV button{
+        font-size: 2vw;
+    }
+    .contact-CV button:hover{
+        transform: scale(1);
+    }
+
+    form :last-child{
+        width: 20vw;
+    }
+    
+    form :last-child:hover{
+        background-color: rgb(0, 255, 170);
+        box-shadow: 1px 2px 25px 5px rgb(35, 255, 182);
+    }
+}
